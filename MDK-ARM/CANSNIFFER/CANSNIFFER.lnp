@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"cansniffer\startup_stm32f103xb.o"
+"cansniffer\main.o"
+"cansniffer\stm32f1xx_it.o"
+"cansniffer\stm32f1xx_hal_msp.o"
+"cansniffer\stm32f1xx_hal_gpio_ex.o"
+"cansniffer\stm32f1xx_hal_can.o"
+"cansniffer\stm32f1xx_hal.o"
+"cansniffer\stm32f1xx_hal_rcc.o"
+"cansniffer\stm32f1xx_hal_rcc_ex.o"
+"cansniffer\stm32f1xx_hal_gpio.o"
+"cansniffer\stm32f1xx_hal_dma.o"
+"cansniffer\stm32f1xx_hal_cortex.o"
+"cansniffer\stm32f1xx_hal_pwr.o"
+"cansniffer\stm32f1xx_hal_flash.o"
+"cansniffer\stm32f1xx_hal_flash_ex.o"
+"cansniffer\stm32f1xx_hal_exti.o"
+"cansniffer\stm32f1xx_hal_tim.o"
+"cansniffer\stm32f1xx_hal_tim_ex.o"
+"cansniffer\stm32f1xx_hal_uart.o"
+"cansniffer\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CANSNIFFER\CANSNIFFER.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CANSNIFFER.map" -o CANSNIFFER\CANSNIFFER.axf
